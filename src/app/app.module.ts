@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloGitComponent } from './hello-git/hello-git.component';
+import { HiFromGitlearningsComponent } from './hi-from-gitlearnings/hi-from-gitlearnings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloGitComponent
+    HiFromGitlearningsComponent
   ],
   imports: [
     BrowserModule,

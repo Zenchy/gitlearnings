@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HelloGitComponent } from './hello-git.component';
+import { HiFromGitlearningsComponent } from './hi-from-gitlearnings.component';
 
-describe('HelloGitComponent', () => {
-  let component: HelloGitComponent;
-  let fixture: ComponentFixture<HelloGitComponent>;
+describe('HiFromGitlearningsComponent', () => {
+  let component: HiFromGitlearningsComponent;
+  let fixture: ComponentFixture<HiFromGitlearningsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HelloGitComponent ]
+      declarations: [ HiFromGitlearningsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HelloGitComponent);
+    fixture = TestBed.createComponent(HiFromGitlearningsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
