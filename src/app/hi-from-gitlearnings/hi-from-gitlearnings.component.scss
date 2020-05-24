@@ -1,13 +1,14 @@
-$color3: #107f00ff;
+$green-4: #107f00ff;
 
 
 .container-fluid {
   height: 100%;
   font-family: 'Digital-font';
+  color: black;
 }
 
 .jumbotron{
-  background-color:$color3 ;
+  background-color:$green-4 ;
 }
 
 .btn-outline-black{

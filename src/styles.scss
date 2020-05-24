@@ -1,28 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.css';
-
+@import './styles/variables/colors.scss';
 
 @font-face {
   font-family: 'Digital-font';
-  src: url('./assets/fonts/Digireu_.ttf');
+  src: url('./assets/fonts/Digireu_.ttf')
 }
-
-$color-black: #000000ff;
-$color2: #70AA66;
-$color3: #107f00ff;
-$color4: #1fcc08ff;
-$color5: #73f257ff;
-$color6: #ffffffff;
 
 
 html {
   height:100%;
+  background-color: #000000 ;
 }
 body {
   min-height: 100%;
-  background-color: $color-black ;
+  background-color: $black ;
   font-family: 'Digital-font';
-
+  color: $green-4;
+  padding: 60px 20px;
 }
-
 

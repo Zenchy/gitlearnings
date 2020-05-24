@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./hi-from-gitlearnings.component.scss']
 })
 export class HiFromGitlearningsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-context-single',
   templateUrl: './context-single.component.html',
-  styleUrls: ['./context-single.component.scss'],
+  styleUrls: ['./context-single.component.scss']
 })
 export class ContextSingleComponent implements OnInit {
-  constructo() {}
+  constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+
+  }
 }
