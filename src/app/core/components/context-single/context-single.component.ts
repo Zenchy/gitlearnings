@@ -33,11 +33,11 @@ export class ContextSingleComponent implements AfterViewInit {
     this.ctx.stroke()
   }
 
-  setPoint(lineWidth, centX, centY, r, sAng, eAng, countClock, isCommited = true): void {
+  setPoint(lineWidth, centX, centY, radius, sAng, eAng, countClock, isCommited = true): void {
     this.ctx.lineWidth = lineWidth
     this.ctx.strokeStyle = isCommited ? '#22577a' : COLORS.green4
     this.ctx.beginPath()
-    this.ctx.arc(centX, centY, r, sAng, eAng, countClock)
+    this.ctx.arc(centX, centY, radius, sAng, eAng, countClock)
     this.ctx.stroke()
   }
 }
