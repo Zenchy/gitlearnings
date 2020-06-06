@@ -1,23 +1,104 @@
 $green-4: #107f00ff;
 
-
 .container-fluid {
   height: 100%;
   font-family: 'Digital-font';
   color: black;
 }
 
-.jumbotron{
-  background-color:$green-4 ;
+.jumbotron {
+  background-color: $green-4;
 }
 
-.btn-outline-black{
-  border: 1px solid  #000000;
+.header-container{
+  display: flex;
 }
 
-.mtx{
-  display:flex;
+.title {
+  font-size: x-large;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.media-sizing {
+  @media(max-width: 800px){
+    font-size: 80%;
+  }
+}
+
+.btn-outline-black {
+  border: 1px solid #000000;
+}
+
+.matrix {
+  @media(max-width: 500px){
+    display: none;
+  }
+}
+
+.minimatrix {
+  color: green;
+  @media(min-width:500px){
+    display: none;
+  }
+}
+
+
+.mtx {
+  @media(max-width: 800px){
+    margin-top: 10px;
+  }
+  display: flex;
   justify-content: center;
 }
 
-#matx{ background: #000; color: rgba(0, 255, 0, .7); width: 100%; height: 400px; overflow: hidden; text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px; position: relative; } @-webkit-keyframes fadeing{ 0% { opacity: 1; } 100% { opacity: 0; } } @-webkit-keyframes falling{ from {top: -250px;} to {top: 388px;} } #matx div{ position: absolute; top: 0; text-transform: lowercase; -webkit-transform:rotate(90deg); -webkit-animation-name: falling, fadeing; -webkit-animation-timing-function: ease-out; -webkit-animation-iteration-count: infinite; -webkit-animation-direction: normal; } .t1{ -webkit-animation-duration: 5s; } .t2{ -webkit-animation-duration: 8s; } .t3{ -webkit-animation-duration: 8s; } .t4{ -webkit-animation-duration: 11s; } .t5{ -webkit-animation-duration: 10s; } 
+#matx {
+  background: #000;
+  color: rgba(0, 255, 0, 0.7);
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  text-shadow: rgba(255, 255, 255, 0.8) 0px 0px 4px;
+  position: relative;
+}
+@-webkit-keyframes fadeing {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes falling {
+  from {
+    top: -250px;
+  }
+  to {
+    top: 388px;
+  }
+}
+#matx div {
+  position: absolute;
+  top: 0;
+  text-transform: lowercase;
+  -webkit-transform: rotate(90deg);
+  -webkit-animation-name: falling, fadeing;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+}
+.t1 {
+  -webkit-animation-duration: 5s;
+}
+.t2 {
+  -webkit-animation-duration: 8s;
+}
+.t3 {
+  -webkit-animation-duration: 8s;
+}
+.t4 {
+  -webkit-animation-duration: 11s;
+}
+.t5 {
+  -webkit-animation-duration: 10s;
+}
