@@ -14,16 +14,25 @@ export class ContextSingleComponent implements AfterViewInit, OnInit {
   constructor() {}
 
   ngOnInit() {
-    let heightAtt = '1000'
-    const body = document.getElementsByTagName('body')[0]
+    const body = document.body
+    // const bodyHeight = document.documentElement.offsetHeight-120
+    const html = document.documentElement
+    console.log('body scrollHeight', body.scrollHeight, 'body offsetHeight', body.offsetHeight,'html clientHeight', html.clientHeight,'html scrollHeight', html.scrollHeight,'html offsetHeight' , html.offsetHeight );
+    // const canvas = document.getElementsByTagName('canvas')[0]
+    // const containerLesson = document.getElementById('containerLesson')
+    // const containerRepresentation = document.getElementById('representation')
+    // containerLesson.setAttribute('height', bodyHeight.toString())
+    // containerRepresentation.setAttribute('height', bodyHeight.toString())
+    // // console.log('body', bodyHeight)
+    // console.log('CONTAINER LESSON', bodyHeight)
+    // console.log('canvas', canvas)
+    // canvas.width = 500
+    // canvas.height = +bodyHeight
     const canvas = document.getElementsByTagName('canvas')[0]
-    const containerLesson = document.getElementById('containerLesson')
-    containerLesson.setAttribute('height', heightAtt )
-    console.log('body',body )
-    console.log('CONTAINER LESSON',containerLesson )
-    console.log('canvas',canvas )
-    canvas.width = 500
-    canvas.height = +heightAtt
+    canvas.style.height = '100%'
+    canvas.style.width = '100%'
+    canvas.height = body.scrollHeight*0.9
+
   }
 
   ngAfterViewInit() {
